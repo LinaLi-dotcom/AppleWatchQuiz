@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9ED48EF525725F9000EEBE33 /* AppleWatchQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED48EF425725F9000EEBE33 /* AppleWatchQuizApp.swift */; };
+		9ED48EF725725F9000EEBE33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED48EF625725F9000EEBE33 /* ContentView.swift */; };
+		9ED48EF925725F9100EEBE33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED48EF825725F9100EEBE33 /* Assets.xcassets */; };
+		9ED48EFC25725F9100EEBE33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED48EFB25725F9100EEBE33 /* Preview Assets.xcassets */; };
+		9ED48F092572605A00EEBE33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED48F082572605A00EEBE33 /* Assets.xcassets */; };
+		9ED48F102572605A00EEBE33 /* AWquiz Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9ED48F0F2572605A00EEBE33 /* AWquiz Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9ED48F152572605A00EEBE33 /* AppleWatchQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED48F142572605A00EEBE33 /* AppleWatchQuizApp.swift */; };
+		9ED48F172572605A00EEBE33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED48F162572605A00EEBE33 /* ContentView.swift */; };
+		9ED48F192572605A00EEBE33 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED48F182572605A00EEBE33 /* NotificationController.swift */; };
+		9ED48F1B2572605A00EEBE33 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED48F1A2572605A00EEBE33 /* NotificationView.swift */; };
+		9ED48F1D2572605A00EEBE33 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED48F1C2572605A00EEBE33 /* ComplicationController.swift */; };
+		9ED48F1F2572605B00EEBE33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED48F1E2572605B00EEBE33 /* Assets.xcassets */; };
+		9ED48F222572605B00EEBE33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED48F212572605B00EEBE33 /* Preview Assets.xcassets */; };
+		9ED48F272572605B00EEBE33 /* AWquiz.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9ED48F062572605900EEBE33 /* AWquiz.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9ED48F34257266A100EEBE33 /* ClockCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED48F33257266A100EEBE33 /* ClockCommunication.swift */; };
+		9ED48F3F25726B9400EEBE33 /* ClockCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED48F33257266A100EEBE33 /* ClockCommunication.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9ED48F112572605A00EEBE33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ED48EE925725F9000EEBE33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ED48F0E2572605A00EEBE33;
+			remoteInfo = "AWquiz Extension";
+		};
+		9ED48F252572605B00EEBE33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ED48EE925725F9000EEBE33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ED48F052572605900EEBE33;
+			remoteInfo = AWquiz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9ED48F2B2572605B00EEBE33 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9ED48F102572605A00EEBE33 /* AWquiz Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ED48F2F2572605B00EEBE33 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9ED48F272572605B00EEBE33 /* AWquiz.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9ED48EF125725F9000EEBE33 /* AppleWatchQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleWatchQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ED48EF425725F9000EEBE33 /* AppleWatchQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchQuizApp.swift; sourceTree = "<group>"; };
+		9ED48EF625725F9000EEBE33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9ED48EF825725F9100EEBE33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9ED48EFB25725F9100EEBE33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9ED48EFD25725F9100EEBE33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ED48F062572605900EEBE33 /* AWquiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWquiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ED48F082572605A00EEBE33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9ED48F0A2572605A00EEBE33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ED48F0F2572605A00EEBE33 /* AWquiz Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AWquiz Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ED48F142572605A00EEBE33 /* AppleWatchQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchQuizApp.swift; sourceTree = "<group>"; };
+		9ED48F162572605A00EEBE33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9ED48F182572605A00EEBE33 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		9ED48F1A2572605A00EEBE33 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		9ED48F1C2572605A00EEBE33 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		9ED48F1E2572605B00EEBE33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9ED48F212572605B00EEBE33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9ED48F232572605B00EEBE33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ED48F242572605B00EEBE33 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		9ED48F33257266A100EEBE33 /* ClockCommunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockCommunication.swift; sourceTree = "<group>"; };
+		9ED48F432572740100EEBE33 /* AWquiz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AWquiz.entitlements; sourceTree = "<group>"; };
+		9ED48F442572744F00EEBE33 /* AWquiz Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AWquiz Extension.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9ED48EEE25725F9000EEBE33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ED48F0C2572605A00EEBE33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9ED48EE825725F9000EEBE33 = {
+			isa = PBXGroup;
+			children = (
+				9ED48EF325725F9000EEBE33 /* AppleWatchQuiz */,
+				9ED48F072572605900EEBE33 /* AWquiz */,
+				9ED48F132572605A00EEBE33 /* AWquiz Extension */,
+				9ED48EF225725F9000EEBE33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9ED48EF225725F9000EEBE33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ED48EF125725F9000EEBE33 /* AppleWatchQuiz.app */,
+				9ED48F062572605900EEBE33 /* AWquiz.app */,
+				9ED48F0F2572605A00EEBE33 /* AWquiz Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ED48EF325725F9000EEBE33 /* AppleWatchQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				9ED48EF425725F9000EEBE33 /* AppleWatchQuizApp.swift */,
+				9ED48F33257266A100EEBE33 /* ClockCommunication.swift */,
+				9ED48EF625725F9000EEBE33 /* ContentView.swift */,
+				9ED48EF825725F9100EEBE33 /* Assets.xcassets */,
+				9ED48EFD25725F9100EEBE33 /* Info.plist */,
+				9ED48EFA25725F9100EEBE33 /* Preview Content */,
+			);
+			path = AppleWatchQuiz;
+			sourceTree = "<group>";
+		};
+		9ED48EFA25725F9100EEBE33 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9ED48EFB25725F9100EEBE33 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9ED48F072572605900EEBE33 /* AWquiz */ = {
+			isa = PBXGroup;
+			children = (
+				9ED48F432572740100EEBE33 /* AWquiz.entitlements */,
+				9ED48F082572605A00EEBE33 /* Assets.xcassets */,
+				9ED48F0A2572605A00EEBE33 /* Info.plist */,
+			);
+			path = AWquiz;
+			sourceTree = "<group>";
+		};
+		9ED48F132572605A00EEBE33 /* AWquiz Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9ED48F442572744F00EEBE33 /* AWquiz Extension.entitlements */,
+				9ED48F142572605A00EEBE33 /* AppleWatchQuizApp.swift */,
+				9ED48F162572605A00EEBE33 /* ContentView.swift */,
+				9ED48F182572605A00EEBE33 /* NotificationController.swift */,
+				9ED48F1A2572605A00EEBE33 /* NotificationView.swift */,
+				9ED48F1C2572605A00EEBE33 /* ComplicationController.swift */,
+				9ED48F1E2572605B00EEBE33 /* Assets.xcassets */,
+				9ED48F232572605B00EEBE33 /* Info.plist */,
+				9ED48F242572605B00EEBE33 /* PushNotificationPayload.apns */,
+				9ED48F202572605B00EEBE33 /* Preview Content */,
+			);
+			path = "AWquiz Extension";
+			sourceTree = "<group>";
+		};
+		9ED48F202572605B00EEBE33 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9ED48F212572605B00EEBE33 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9ED48EF025725F9000EEBE33 /* AppleWatchQuiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ED48F0025725F9100EEBE33 /* Build configuration list for PBXNativeTarget "AppleWatchQuiz" */;
+			buildPhases = (
+				9ED48EED25725F9000EEBE33 /* Sources */,
+				9ED48EEE25725F9000EEBE33 /* Frameworks */,
+				9ED48EEF25725F9000EEBE33 /* Resources */,
+				9ED48F2F2572605B00EEBE33 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9ED48F262572605B00EEBE33 /* PBXTargetDependency */,
+			);
+			name = AppleWatchQuiz;
+			productName = AppleWatchQuiz;
+			productReference = 9ED48EF125725F9000EEBE33 /* AppleWatchQuiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9ED48F052572605900EEBE33 /* AWquiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ED48F2C2572605B00EEBE33 /* Build configuration list for PBXNativeTarget "AWquiz" */;
+			buildPhases = (
+				9ED48F042572605900EEBE33 /* Resources */,
+				9ED48F2B2572605B00EEBE33 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9ED48F122572605A00EEBE33 /* PBXTargetDependency */,
+			);
+			name = AWquiz;
+			productName = AWquiz;
+			productReference = 9ED48F062572605900EEBE33 /* AWquiz.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		9ED48F0E2572605A00EEBE33 /* AWquiz Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ED48F282572605B00EEBE33 /* Build configuration list for PBXNativeTarget "AWquiz Extension" */;
+			buildPhases = (
+				9ED48F0B2572605A00EEBE33 /* Sources */,
+				9ED48F0C2572605A00EEBE33 /* Frameworks */,
+				9ED48F0D2572605A00EEBE33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AWquiz Extension";
+			productName = "AWquiz Extension";
+			productReference = 9ED48F0F2572605A00EEBE33 /* AWquiz Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9ED48EE925725F9000EEBE33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					9ED48EF025725F9000EEBE33 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					9ED48F052572605900EEBE33 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					9ED48F0E2572605A00EEBE33 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 9ED48EEC25725F9000EEBE33 /* Build configuration list for PBXProject "AppleWatchQuiz" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9ED48EE825725F9000EEBE33;
+			productRefGroup = 9ED48EF225725F9000EEBE33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9ED48EF025725F9000EEBE33 /* AppleWatchQuiz */,
+				9ED48F052572605900EEBE33 /* AWquiz */,
+				9ED48F0E2572605A00EEBE33 /* AWquiz Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9ED48EEF25725F9000EEBE33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED48EFC25725F9100EEBE33 /* Preview Assets.xcassets in Resources */,
+				9ED48EF925725F9100EEBE33 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ED48F042572605900EEBE33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED48F092572605A00EEBE33 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ED48F0D2572605A00EEBE33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED48F222572605B00EEBE33 /* Preview Assets.xcassets in Resources */,
+				9ED48F1F2572605B00EEBE33 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9ED48EED25725F9000EEBE33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED48F34257266A100EEBE33 /* ClockCommunication.swift in Sources */,
+				9ED48EF725725F9000EEBE33 /* ContentView.swift in Sources */,
+				9ED48EF525725F9000EEBE33 /* AppleWatchQuizApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ED48F0B2572605A00EEBE33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED48F192572605A00EEBE33 /* NotificationController.swift in Sources */,
+				9ED48F172572605A00EEBE33 /* ContentView.swift in Sources */,
+				9ED48F1D2572605A00EEBE33 /* ComplicationController.swift in Sources */,
+				9ED48F3F25726B9400EEBE33 /* ClockCommunication.swift in Sources */,
+				9ED48F152572605A00EEBE33 /* AppleWatchQuizApp.swift in Sources */,
+				9ED48F1B2572605A00EEBE33 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9ED48F122572605A00EEBE33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ED48F0E2572605A00EEBE33 /* AWquiz Extension */;
+			targetProxy = 9ED48F112572605A00EEBE33 /* PBXContainerItemProxy */;
+		};
+		9ED48F262572605B00EEBE33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ED48F052572605900EEBE33 /* AWquiz */;
+			targetProxy = 9ED48F252572605B00EEBE33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9ED48EFE25725F9100EEBE33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9ED48EFF25725F9100EEBE33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9ED48F0125725F9100EEBE33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AppleWatchQuiz/Preview Content\"";
+				DEVELOPMENT_TEAM = 93MKZBH3SD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AppleWatchQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.linasappar.AppleWatchQuiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9ED48F0225725F9100EEBE33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AppleWatchQuiz/Preview Content\"";
+				DEVELOPMENT_TEAM = 93MKZBH3SD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AppleWatchQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.linasappar.AppleWatchQuiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9ED48F292572605B00EEBE33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "AWquiz Extension/AWquiz Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AWquiz Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 93MKZBH3SD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "AWquiz Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.linasappar.AppleWatchQuiz.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		9ED48F2A2572605B00EEBE33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "AWquiz Extension/AWquiz Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AWquiz Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 93MKZBH3SD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "AWquiz Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.linasappar.AppleWatchQuiz.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		9ED48F2D2572605B00EEBE33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AWquiz/AWquiz.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93MKZBH3SD;
+				IBSC_MODULE = AWquiz_Extension;
+				INFOPLIST_FILE = AWquiz/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = se.linasappar.AppleWatchQuiz.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		9ED48F2E2572605B00EEBE33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AWquiz/AWquiz.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93MKZBH3SD;
+				IBSC_MODULE = AWquiz_Extension;
+				INFOPLIST_FILE = AWquiz/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = se.linasappar.AppleWatchQuiz.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9ED48EEC25725F9000EEBE33 /* Build configuration list for PBXProject "AppleWatchQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ED48EFE25725F9100EEBE33 /* Debug */,
+				9ED48EFF25725F9100EEBE33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ED48F0025725F9100EEBE33 /* Build configuration list for PBXNativeTarget "AppleWatchQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ED48F0125725F9100EEBE33 /* Debug */,
+				9ED48F0225725F9100EEBE33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ED48F282572605B00EEBE33 /* Build configuration list for PBXNativeTarget "AWquiz Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ED48F292572605B00EEBE33 /* Debug */,
+				9ED48F2A2572605B00EEBE33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ED48F2C2572605B00EEBE33 /* Build configuration list for PBXNativeTarget "AWquiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ED48F2D2572605B00EEBE33 /* Debug */,
+				9ED48F2E2572605B00EEBE33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9ED48EE925725F9000EEBE33 /* Project object */;
+}
